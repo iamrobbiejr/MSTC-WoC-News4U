@@ -1,7 +1,7 @@
 import requests
 import bs4
 
-print("\nWelcome to News4u..!!\n")
+print("\nWelcome to News4U..!!\n")
 print("Topics:\n\n all\n national    business\n sports      world\n politics    technology\n startup     entertainment\n science     automobile\n")
 topic = input("Enter a topic from above to get news:  \n")
 
