@@ -18,6 +18,10 @@ How to use this project:
 
 Update :
 Made a flask app using existing code.
+To use the project :
+1. Clone the project and install requests , bs4 ,flask using latest version of pip.
+2. Run the app.py file using python 3.7 .
+3. App will be running on http://127.0.0.1:5000/
 
 
 
