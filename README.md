@@ -16,6 +16,6 @@ Happy Reading..!!
 
 Update : Made a flask app using existing logic.
 To use the app:
-1. Downloan/Clone the project and install requests, bs4 , flask using pip.
+1. Downloan/Clone the project and install requests, bs4 , re,flask using pip.
 2. Run app.py file using python3.
 3. App will be running on http://127.0.0.1:5000/ .
