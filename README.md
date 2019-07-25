@@ -14,7 +14,7 @@ How to use this project:
 2)After running , it will show you a list of news topics.
 3)Then enter any topic from given ones according to your choice.
 4)The program will return you the latest news headlines of the given topic with links for further reading.
-# Happy Reading..!!
+ Happy Reading..!!
 
 Update :
 Made a flask app using existing code.
