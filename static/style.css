@@ -1,0 +1,14 @@
+h1 {
+
+    color:rgba(0, 153, 255, 0.774);
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul{
+    list-style: none;
+    border: 10px solid black
+}
+
+body{
+    background-color: cornsilk
+}

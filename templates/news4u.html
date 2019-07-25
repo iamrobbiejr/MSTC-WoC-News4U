@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+<!-- {% block head %}
+
+{% endblock %} -->
+
+{% block body %}
+<br>
+<h3> Top {{news_topic}} News: </h3>
+<ul style="font-family: 'Courier New', Courier, monospace; font-size: 30px">
+    {% for news in all_news %}
+    <li> <a href="{{news.source}}"  target="_blank">{{news.title}}</a> <hr> </li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

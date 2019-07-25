@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News4U</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <script src="http://code.jquery.com/jquery-3.4.1.js"> </script>
+    <script src="{{url_for('static',filename='app.js')}}"></script>
+    {% block head %}{% endblock %}
+    </head>
+<body background="green">
+
+    <div class="container">
+    <h1 align="center" class="heading">News4U</h1>
+    <form action="/" method="POST">
+        <div class="input-group">
+                <select class="custom-select" name="topic" id="inputGroupSelect04" aria-label=" news ">
+                  <option selected>Choose a topic to get latest news..</option>
+                  <option value="">All</option>
+                  <option value="sports">Sports</option>
+                  <option value="world">World</option>
+                  <option value="business">Business</option>
+                  <option value="national">National</option>
+                  <option value="politics">Politics</option>
+                  <option value="startup">Startup</option>
+                  <option value="science">Science</option>
+                  <option value="technology">Technology</option>
+                  <option value="entertainment">Entertainment</option>
+                  <option value="automobile">Automobile</option>
+                </select>
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </div>
+       </div>
+      </form>
+      {% block body %}{% endblock %}
+    </div>
+</body>
+</html>
