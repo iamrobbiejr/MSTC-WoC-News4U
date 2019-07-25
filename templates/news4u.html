@@ -7,11 +7,30 @@
 {% block body %}
 <br>
 <h3> Top {{news_topic}} News: </h3>
-<ul style="font-family: 'Courier New', Courier, monospace; font-size: 30px">
+<div class="row">
+{% for news in all_news %}
+<div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem; ">
+    <img src="{{news.image_url}}" class="card-img-top" class="img-fluid" style="max-height: 10em"  alt="no image">
+    <div class="card-body">
+        <p class="card-text"><a href="{{news.source}}"  target="_blank">{{news.title}}</a></p>
+    </div>
+</div>
+
+{% endfor %}
+</div>
+
+
+<!-- <ul >
     {% for news in all_news %}
-    <li> <a href="{{news.source}}"  target="_blank">{{news.title}}</a> <hr> </li>
+    <div class="row">
+    <li>
+        <div class="col-sm-6 col-lg-6" ><img src="{{news.image_url}}" alt="no image" class="img-fluid max-width: 20%"  > </div>
+
+        <div class="col-sm-6 col-lg-6"> <a href="{{news.source}}"  target="_blank">{{news.title}}</a> </div><hr>
+    </li>
+    </div>
     {% endfor %}
 
-</ul>
+</ul> -->
 
 {% endblock %}
