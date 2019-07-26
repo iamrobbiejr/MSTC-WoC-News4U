@@ -12,10 +12,11 @@ def index():
 
     if request.method=='POST':
         topic=request.form['topic']
-        if topic=="all":
-            res = requests.get('https://inshorts.com/en/read/')
-        else:
-            res = requests.get('https://inshorts.com/en/read/' + topic)
+
+        res = requests.get('https://inshorts.com/en/read/' + topic)
+
+        if topic=="":
+                topic="_"
 
 # parsing the document received from requests using beautiful soup
         soup = bs4.BeautifulSoup(res.text, 'lxml')

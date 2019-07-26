@@ -6,7 +6,11 @@
 
 {% block body %}
 <br>
+{% if news_topic %}
 <h3> Top {{news_topic}} News: </h3>
+{% else %}
+<h3 align="center"> Hi , Welcome to News4U !! </h3>
+{% endif %}
 <div class="row">
 {% for news in all_news %}
 <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-3" style="width: 18rem; ">
